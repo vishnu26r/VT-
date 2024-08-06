@@ -5,26 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./output.css" rel="stylesheet">
+    <link href="./button.css" rel="stylesheet">
 </head>
 <body>
-
     <!-- Nav Bar -->
-     <div class="container mx-auto bg-purple-400">
+     <div class="z-10 top-10 container mx-auto bg-cyan-200">
         <nav>
             <div class="flex justify-end gap-5 p-3 pb-2 "> 
                 <ul class="flex gap-10">
-                    <li><a class="text-white hover:text-black font-medium" href="#">Home</a></li>
-                    <li><a class="text-white hover:text-black font-medium" href="Service.html">Service</a></li>
-                    <li><a class="text-white hover:text-black font-medium" href="aboutus.html">Aboutus</a></li>
+                    <li><a class="btn" href="#">Home</a></li>
+                    <li><a class="btn" href="Service.html">Service</a></li>
+                    <li><a class="btn" href="aboutus.html">Aboutus</a></li>
                 </ul>
-                <button class="transition ease-in-out p-1 delay-150  hover:text-white rounded-full px-2 bg-purple-500 hover:-translate-y-1 hover:scale-110 hover:bg-purple-900 duration-300 ...">
-               <a href="login.html">Sign-up</a> </button>        
              </div>
         </nav>
      </div>
 </body>
 </html>
-
 <!-- Hero Section -->
  <div class="container mx-auto md:flex mt-10  sm:gap-4">
     <div class="md:w-1/2 "><p class="text-center  ml-4 font-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit in adipisci voluptatum sapiente dolor blanditiis error quis maiores laborum officia. Itaque commodi ex at molestiae, laborum voluptatem. Nam ratione mollitia quis aliquid, est cupiditate amet repellat fuga ex minus dignissimos aliquam? Placeat accusantium nesciunt molestias facilis possimus vel reiciendis blanditiis.</p>
@@ -38,188 +35,33 @@
   <div class="container mx-auto flex flex-col md:flex-row gap-12 m-12">
     <div class="md:w-1/3 text-center flex flex-col items-center">
         <h1 class="text-2xl">Laptop</h1>
-        <a href="Service.html"><img class="h-40 w-40" src="asset/Web.png" alt=""></a>
+        <a href="Service.html"><img class="h-40 w-40 hover:shadow-lg" src="asset/Web.png" alt=""></a>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad excepturi quis, explicabo rem expedita accusamus veniam consequuntur commodi, voluptates vel voluptatibus iusto. Voluptates ut eaque quibusdam reiciendis iure id?</p>
     </div>
     <div class="md:w-1/3 text-center flex flex-col items-center">
         <h1 class="text-2xl">OS</h1>
-        <a href="Service.html"><img class="h-40 w-40" src="asset/Mobile.png" alt=""></a>
+        <a href="Service.html"><img class="h-40 w-40 hover:shadow-lg" src="asset/Mobile.png" alt=""></a>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit unde, qui nostrum dolor illo earum voluptatem placeat omnis similique quibusdam deleniti non est harum. Tenetur error ad eveniet doloremque ab?</p>
     </div>
     <div class="md:w-1/3 text-center flex flex-col items-center">
         <h1 class="text-2xl">Web Development </h1>
-        <a href="Service.html"><img class="h-40 w-40" src="asset/here.png" alt=""></a>
+        <a href="Service.html"><img class="h-40 w-40 hover:shadow-lg" src="asset/here.png" alt=""></a>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, sit facere. Dolor cumque suscipit excepturi, similique doloribus totam sapiente animi consectetur vero ea ipsa inventore quibusdam saepe quo culpa deleniti?</p>
     </div>
   </div>
 
    <!-- Pricing -->
-    <!-- Box-1 -->
-   <div class="container mx-auto mt-6 ">
+    
+   <div class="container mx-auto mt-6  ">
     <div class="text-center">
         <h1 class="font-bold text-green-500 text-3xl">Pricing</h1>
         <p class="text-2xl">Offers multiple packages for Monthly and Yearl Subscriptions</p>
         <p class="text-2xl">Features plan are here</p>
     </div>
-    <div class="grid md:grid-cols-3  grid-cols-1 gap-4  mt-4 mx-40  md:mx-10">
-        <div class="relative mt-4 bg-gray-200 w-80 rounded-2xl hover:shadow-2xl text-center">
-            <h1 class="font-bold text-5xl">₹50</h1>
-            <h2 class="text-green-500 mb-3 font-bold">Fan Cleaning</h2>
-            <p> All the features are included</p>
-            <ul class="ml-4 mb-10">
-                <li class="flex items-center mt-4">
-                    <div>
-                        <svg class="h-6 w-6 text-indigo-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
-                            </svg>
-                    </div>
-                    <div>
-                        Core Business System
-                    </div>
-                </li>
-                <li class="flex items-center mt-4">
-                    <div>
-                        <svg class="h-6 w-6 text-indigo-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
-                            </svg>
-                    </div>
-                    <div>
-                        Core Business System
-                    </div>
-                </li>
-                <li class="flex items-center mt-4">
-                    <div>
-                        <svg class="h-6 w-6 text-red-500" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle fill="currentColor" opacity="0.5" cx="12" cy="12" r="10" stroke="#1C274C" stroke-width="1.5"/>
-                            <path fill="currentColor" d="M15 12H9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
-                    </div>
-                    <div>
-                        Customized Features
-                    </div>
-                </li>
-                <li class="flex items-center mt-4">
-                    <div>
-                        <svg class="h-6 w-6 text-red-500" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle fill="currentColor" opacity="0.5" cx="12" cy="12" r="10" stroke="#1C274C" stroke-width="1.5"/>
-                            <path fill="currentColor" d="M15 12H9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
-                    </div>
-                    <div>
-                        Dual Infrastructure
-                    </div>
-                </li>
+</div>
+    
 
-            </ul>
-            <button class="absolute bottom-0 transform translate-y-5 -translate-x-16 bg-blue-700 text-white px-6 py-2 rounded-full mt-6 font-normal">Get Started</button>
-        </div>
-        <!-- box-2 -->
-
-        <div class=" relative  border-4 border-indigo-500 border-dashed sm:mt-4 bg-gray-200 w-80 rounded-2xl hover:shadow-2xl text-center">
-            <h1 class="font-bold text-5xl">₹100</h1>
-            <h2 class="text-green-500 mb-3 font-bold">SSD and HDD</h2>
-            <p> All the features are included</p>
-            <ul class="ml-4">
-                <li class="flex items-center mt-4">
-                    <div>
-                        <svg class="h-6 w-6 text-indigo-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
-                            </svg>
-                    </div>
-                    <div>
-                        Core Business System
-                    </div>
-                </li>
-                <li class="flex items-center mt-4">
-                    <div>
-                        <svg class="h-6 w-6 text-indigo-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
-                            </svg>
-                    </div>
-                    <div>
-                        Core Business System
-                    </div>
-                </li>
-                <li class="flex items-center mt-4">
-                    <div>
-                        <svg class="h-6 w-6 text-red-500" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle fill="currentColor" opacity="0.5" cx="12" cy="12" r="10" stroke="#1C274C" stroke-width="1.5"/>
-                            <path fill="currentColor" d="M15 12H9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
-                    </div>
-                    <div>
-                        Customized Features
-                    </div>
-                </li>
-                <li class="flex items-center mt-4">
-                    <div>
-                        <svg class="h-6 w-6 text-red-500" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle fill="currentColor" opacity="0.5" cx="12" cy="12" r="10" stroke="#1C274C" stroke-width="1.5"/>
-                            <path fill="currentColor" d="M15 12H9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
-                    </div>
-                    <div>
-                        Dual Infrastructure
-                    </div>
-                </li>
-
-            </ul>
-            <button class="absolute bottom-0 transform translate-y-5 -translate-x-16 bg-blue-700 text-white px-6 py-2 rounded-full mt-6 font-normal">Get Started</button>
-        </div>
-        <!-- box-3 -->
-        <div class="relative  mt-4 bg-gray-200 w-80 rounded-2xl hover:shadow-2xl text-center">
-            <h1 class="font-bold text-5xl">₹150</h1>
-            <h2 class="text-green-500 mb-3 font-bold">OS</h2>
-            <p> All the features are included</p>
-            <ul class="ml-4">
-                <li class="flex items-center mt-4">
-                    <div>
-                        <svg class="h-6 w-6 text-indigo-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
-                            </svg>
-                    </div>
-                    <div>
-                        Core Business System
-                    </div>
-                </li>
-                <li class="flex items-center mt-4">
-                    <div>
-                        <svg class="h-6 w-6 text-indigo-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z" fill="#000000"/>
-                            </svg>
-                    </div>
-                    <div>
-                        Core Business System
-                    </div>
-                </li>
-                <li class="flex items-center mt-4">
-                    <div>
-                        <svg class="h-6 w-6 text-red-500" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle fill="currentColor" opacity="0.5" cx="12" cy="12" r="10" stroke="#1C274C" stroke-width="1.5"/>
-                            <path fill="currentColor" d="M15 12H9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
-                    </div>
-                    <div>
-                        Customized Features
-                    </div>
-                </li>
-                <li class="flex items-center mt-4">
-                    <div>
-                        <svg class="h-6 w-6 text-red-500" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle fill="currentColor" opacity="0.5" cx="12" cy="12" r="10" stroke="#1C274C" stroke-width="1.5"/>
-                            <path fill="currentColor" d="M15 12H9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
-                    </div>
-                    <div>
-                        Dual Infrastructure
-                    </div>
-                </li>
-
-            </ul>
-            <button class="absolute bottom-0 transform translate-y-5 -translate-x-16 bg-blue-700 text-white px-6 py-2 rounded-full mt-6 font-normal">Get Started</button>
-        </div>
-    </div>
-  </div>
+  
   <!-- tag line -->
 
   <div class="container mx-auto bg-gray-300 rounded-2xl hover:shadow-lg p-4 mt-10 mb-10 px-10 hover:bg-green-300 ">
@@ -227,6 +69,7 @@
 <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat delectus pariatur id sapiente fuga minus itaque saepe, dicta omnis ullam.</p>
 
   </div>
+
 
   <!-- Footer Section -->
    <footer class="container mx-auto bg-purple-400 ">
