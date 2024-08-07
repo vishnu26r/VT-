@@ -10,21 +10,37 @@
 </head>
 <body>
     <!-- Nav Bar -->
-     <div class="z-10 top-10 container mx-auto bg-cyan-200">
+     <div class="container mx-auto bg-cyan-200">
         <nav>
-            <div class="flex justify-end gap-5 p-3 pb-2 "> 
-                <ul class="flex gap-10">
+            <div class=" "> 
+            </div>
+
+                <ul class="hidden md:flex justify-end gap-5 p-3 pb-2">
                     <li><a class="btn" href="#">Home</a></li>
                     <li><a class="btn" href="Service.html">Service</a></li>
                     <li><a class="btn" href="aboutus.html">Aboutus</a></li>
                 </ul>
-             </div>
+                <button class="md:hidden mobile-icon">
+                  <svg class="h-10 w-10 mr-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+              </button>
         </nav>
      </div>
-</body>
-</html>
+
+
+  <!-- Mobile Nav -->
+  <div class="md:hidden mobile-menu  ">
+    <ul class="flex flex-col items-start mx-2 space-y-6  ">
+        <li><a class="text-blue-500 font-medium hover:text-pink-500" href="#">Home</a></li>
+        <li><a class="text-blue-500 font-medium hover:text-pink-500" href="#">Service</a></li>
+        <li><a class="text-blue-500 font-medium hover:text-pink-500" href="#">Aboutus</a></li>
+        <li><a class="text-blue-500 font-medium hover:text-pink-500" href="#"></a></li>
+        <li></li>
+    </ul>
+  </div>
 <!-- Hero Section -->
- <div class="container mx-auto md:flex mt-10  sm:gap-4">
+ <div class="container mx-auto md:flex mt-5  sm:gap-4">
     <div class="md:w-1/2 "><p class="text-center  ml-4 font-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit in adipisci voluptatum sapiente dolor blanditiis error quis maiores laborum officia. Itaque commodi ex at molestiae, laborum voluptatem. Nam ratione mollitia quis aliquid, est cupiditate amet repellat fuga ex minus dignissimos aliquam? Placeat accusantium nesciunt molestias facilis possimus vel reiciendis blanditiis.</p>
     </div>
     <div class="md:w-1/2 justify-end  ">
@@ -110,3 +126,16 @@
     </div>
 
    </footer>
+
+   <script>
+    const MobileIcon = document.querySelector('.mobile-icon')
+    const MobileMenu = document.querySelector('.mobile-menu')
+
+    MobileIcon.addEventListener('click',()=>{
+        MobileMenu.classList.toggle('hidden')
+    })
+
+   </script>
+
+   </body>
+</html>
