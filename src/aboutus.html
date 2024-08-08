@@ -13,29 +13,70 @@
         <nav>
             <div class=" justify-between gap-5 flex p-4">
                     <ul>
-                        <li><h1 class="text-black font-bold text-2xl">About US</h1></li>
+                        <li class="btn"><a href=""><h1 class="text-black font-bold text-2xl">About US</h1></a></li>
                     </ul>
-                    <ul class="flex gap-5">
+                    <ul class="hidden md:flex justify-end gap-5 p-3 pb-2">
                         <li><a class="btn" href="index.html">Home</a></li>
                         <li><a class="btn" href="Service.html">services</a></li>
                     </ul>
+                    <button class="md:hidden mobile-icon">
+                        <svg class="h-10 w-10 mr-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </button>
                 </div>
             </div>
         </nav>
     </div>
+
+
+    
+  <!-- Mobile Nav -->
+  <div class="md:hidden mobile-menu  ">
+    <ul class="flex flex-col items-end mx-2 space-y-6  ">
+        <li><a class="text-blue-500 font-medium hover:text-pink-500" href="#">Home</a></li>
+        <li><a class="text-blue-500 font-medium hover:text-pink-500" href="#">Service</a></li>
+        <li><a class="text-blue-500 font-medium hover:text-pink-500" href="#">Aboutus</a></li>
+        <li><a class="text-blue-500 font-medium hover:text-pink-500" href="#"></a></li>
+        <li></li>
+    </ul>
+  </div>
      <!-- main section -->
      <div class="container mx-auto mt-10">
         <div class="text-center">
             <h1 class="text-2xl text-bold">History of our business</h1>
-            <p>we are started this process through our third year of engineering.This a business just developed to help college students with their laptop services which they think diffifult and are not cheap.we offer prices which you have never seen before, we thought of it because college students struggle with their money,and are forced to spent them on various means of fees to the college,so me mylself Tharun and vishnuvel we offer laptop services for lower cost.our idea kick started when we first opened and cleaned vishnu's laptop and cleaned its fan.After one by one we asked for their laptops and cleaned their fans and discovered new things in their laptops like the placement of slots like RAM,SSD,HDD etc,we also offered them advice on what and all upgrades they can make.This was our story.And we thought that we could gain more reach by creating a website so anyone with any kind of service related to their laptop can contact us or go on to the services page and fill out the google form and we will reach you as soon as possible.The pricing for each task is mentioned clearly in our services page.</p>
+            <p class="mt-10 text-xl">we are started this process through our third year of engineering.This a business just developed to help college students with their laptop services which they think diffifult and are not cheap.we offer prices which you have never seen before, we thought of it because college students struggle with their money,and are forced to spent them on various means of fees to the college,so me mylself Tharun and vishnuvel we offer laptop services for lower cost.our idea kick started when we first opened and cleaned vishnu's laptop and cleaned its fan.After one by one we asked for their laptops and cleaned their fans and discovered new things in their laptops like the placement of slots like RAM,SSD,HDD etc,we also offered them advice on what and all upgrades they can make.This was our story.And we thought that we could gain more reach by creating a website so anyone with any kind of service related to their laptop can contact us or go on to the services page and fill out the google form and we will reach you as soon as possible.The pricing for each task is mentioned clearly in our services page.</p>
         </div>
-        <img class="mt-10" src="Screenshot 2024-03-06 175229.png" alt="Due to improper network connection" >
+        <img class="ml-auto mr-auto mt-10" src="Screenshot 2024-03-06 175229.png" alt="Due to improper network connection">
         <div class="mx-auto flex mt-10">
-            <h1 class="text-6xl text-center mt-12">This is the pic of servicing our friends laptop</h1>
+            <h1 class="text-center mt-auto mb-auto text-2xl">This is the pic of servicing our friends laptop,It was a hp pavillion ,it had two ram solts but one was filled with a 8 gig card and cooper heat sinks.Right next to it was its ssd,His laptop was more different from my laptop while mine had two ssd slots whereas his had a ssd slot and a hdd slot,which i told him to rush and buy it cause hdd were cheaper then ssd and adivced him to just use it as a external storage and not as a primary boot memory device,Cause ssd are more faster than hdd's.After discovery we removed his fan and cleaned his gooch filled fan,carefully inserted its wires and screwed them.This was our starting of our business of servicing laptops.
+
+            </h1>
             <img class="w-96 h-96" src="Screenshot 2024-03-06 175229.png" alt="">
         </div>
         <h1 class="text-2xl text-center mt-10">This was our first servicing and it started out of curiosity to look what's inside this laptop</h1>
-     </div>
-     <div><bu</div>
+        <footer class="container mx-auto bg-cyan-200 mt-10 ">
+            <div class="flex">
+                <div class="w-1/4 p-2"><p class="text-center font-thin text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit commodi, pariatur amet mollitia distinctio sunt! </p></div>
+                <div class="w-1/2 items-center ">
+                    <h2 class="text-center">vishnuvel26.r@gmail.com </h2>
+                    <h2 class="text-center">PH-7604903330</h2>
+                </div>
+                <div class="text-center">
+                    <div class="btn"><a  href="#">instagram</a></div>
+                </div>
+            </div>
+        
+           </footer>
+    <!-- Script -->
+           <script>
+            const MobileIcon = document.querySelector('.mobile-icon')
+            const MobileMenu = document.querySelector('.mobile-menu')
+        
+            MobileIcon.addEventListener('click',()=>{
+                MobileMenu.classList.toggle('hidden')
+            })
+        
+           </script>
 </body>
 </html>
